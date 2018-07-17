@@ -3,99 +3,134 @@
 <link rel="stylesheet" type="text/css" href="default.css">
 <meta charset="utf-8">
 <title>Shenikia's Area</title>
+
+<script src=""></script>
+
+
 </head>
 
-<body bgcolor="purple">
+<body bgcolor="brick">
 
-<h1>Shenikia's web Page</h1>
-<h2>Let's see your creativity</h2>
+<h1>Shenikia's Web Page</h1>
+
+<div class="intro">
+	<h2>Finding Myself</h2>
+  <div class="myself">
+    <img src="pics/Shen in Red and Black.jpg" width="200" alt="Shenikia"
+				 			border="5rem solid">
+      </div>
+    <div class="about me">
+			
+      2 of 2
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      1 of 3
+    </div>
+    <div class="col">
+      2 of 3
+    </div>
+    <div class="col">
+      3 of 3
+    </div>
+  </div>
+</div>
 
 
-<img src="pics/Shen in Red and Black.jpg" width="200" alt="Shenikia"
-		 			border="5rem solid">
-		 <p>Finding Myself</p>
+ <p>About Me: This is a new chapter in my journey.  Life has most definitely
+	 taken unexpected turns and left me angry and voiceless at times.  But, I
+   am still here and that means there is work to do. While variety is my current
+	 way of functioning, order is at my core. I hope as you peruse my page, there
+	 will be something that catches your attention and causes you to want to utilize
+	 my services or extend a hand.
+	</p>
+
+<p>There is a need for women helping other women, regardless of race, belief, economic
+	status, or any other subjective prejudice.  Women are strong.  But we are stronger
+	together.  People can experience some major life changes and a huge one is pregnancy
+	and what follows.
+
+</p>
+
 <div id="shadowbox">
 		 <p>I wonder what the Bahamas feels like...</p>
-</div id>
+</div>
 
 <form action="default.htm" method="post">
 			<h1>Sign Up</h1>
 
+<!--- Will be used for Post Partum Assist & Financial Planning Help--->
 			<fieldset>
 			<legend><span class="number">1</span>Your Basic Info</legend>
 
-  			<label for="name">name:</label>
+				<label for="name">name:</label>
   			<input type="text" id="name" name="user_name">
 
   			<label for="mail">email:</label>
   			<input type="email" id="mail" name="user_email"><br>
 
-  			<label for="password">password:</label>
-  			<input type="password" id"password" name"user_password"><br>
-
-        <label>Age:</label>
-        <input type="radio" id="under_13" value="under_13" name="user_age">
-        <label for="under_13" class="light">Under_13</label><br>
-
-        <input type="radio" id="over_13" value="over_13" name="user_age">
-        <label for="over_13" class="light">13 or Over</label><br>
-
   			<label for="tel">telephone:</label>
   			<input type="telephone" id="tel" name="user_telephone">
+
+				<label>Interest(s):</label>
+	      <input type="checkbox" id="party" value="party" name="user_party">
+	      <label class="light" for="party">Party</label><br>
+
+	      <input type="checkbox" id="gathering" value="gathering" name="user_gathering">
+	      <label class="light" for="gathering">Gathering</label><br>
+
+	      <input type="checkbox" id="outing" value="outing" name="user_outing">
+	      <label class="light" for="outing">Outing</label><br>
 			</fieldset>
 
 			<fieldset>
 			<legend><span class="number">2</span>Your Profile</legend>
-  			<label for="bio">biography:</label>
-  			<textarea id="bio" name="user_bio"></textarea>
+  			<label for="about">all about you:</label>
+  			<textarea id="about" name="user_about"></textarea>
 
-				<label for="job">job role:</label>
-				<select id="job" name="user_job">
-      <optgroup label="Web">
-				<option value="frontend_developer">Front-End Developer</option>
-				<option value="php_developer">PHP Developer</option>
-				<option value="python_developer">Python Developer</option>
-				<option value="rails_developer">Rails Developer</option>
-				<option value="web_designer">Web Designer</option>
-				<option value="wordpress_developer">WordPress Developer</option>
+
+				<!--- Will be used for Organizing Events --->
+
+				<label for="event">organized events:</label>
+				<select id="event" name="user_event">
+      <optgroup label="Party">
+				<option value="graduation">Graduation</option>
+				<option value="game_night">Game Night</option>
+				<option value="birthday">Birthday</option>
+				<option value="other">Other</option>
+				  </optgroup>
+      <optgroup label="Gathering">
+				<option value="family_dinner">Family Dinner</option>
+				<option value="baby_shower">Baby Shower</option>
+				<option value="book_signing">Book Signing</option>
+				<option value="other">Other</option>
           </optgroup>
-      <optgroup label="Android">
-				<option value="android_developer">Android Developer</option>
-				<option value="ios_developer">IOS Developer</option>
-				<option value="mobile_designer">Mobile Designer</option>
-          </optgroup>
-      <optgroup label="Business">
-        <option value="business_owner">Business Owner</option>
-				<option value="freelancer">Freelancer</option>
+      <optgroup label="Outing">
+        <option value="trips_out_of_town">Trips Out of Town</option>
+				<option value="fun_day_out">Fun Day Out</option>
+				<option value="other">Other</option>
         </optgroup>
       </select>
 <br>
-      <label>Interests:</label>
-      <input type="checkbox" id="development" value="interests_development" name="user_interest">
-      <label class="light" for="development">Development</label><br>
-
-      <input type="checkbox" id="design" value="interests_design" name="user_interest">
-      <label class="light" for="design">Design</label><br>
-
-      <input type="checkbox" id="business" value="interests_business" name="user_interest">
-      <label class="light" for="business">Business</label><br>
-
-
 			</fieldset>
 
 			<button type="submit">Sign Up</button>
 </form>
 
+
+<!--- Will be used for Post Partum Assist & Financial Planning Help--->
+
 <div>
 <img src="/shen/images/my pic.jpg" width="200" alt="my pic"
 		 border="7rem solid">
-		 <p>This is my first black and white</p>
+		 <p>delete this pic</p>
 </div>
 
 <div>
 <img src="pics/John and Adira.jpg" width="550" alt="John and Adira"
 		 border="9rem solid">
-		 <p>John and Adira</p>
+		 <p>Add a pic of all 3 children (My reasons why)</p>
 </div>
 
 
