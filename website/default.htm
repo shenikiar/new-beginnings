@@ -1,66 +1,232 @@
+<!DOCTYPE html>
 <html>
 <head>
+<script type="text/javascript" src="default.js"></script>
 <link rel="stylesheet" type="text/css" href="default.css">
+
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+ <script src=""jquery-3.2.1.min.js"></script>
+
+ <link rel="stylesheet" type="text/css" href="default.css">
+
 <title>Shenikia's Area</title>
+<!---a welcome to my page --->
 
-<script src=""></script>
+<!---navigation bar --->
+<style>
+div.content {
+    margin-left: 25%;
+    padding: 1px 16px;
+    height: 1000px;
+}
 
+@media screen and (max-width: 900px) {
+    ul.sidenav {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    ul.sidenav li a {
+        float: left;
+        padding: 15px;
+    }
+    div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+    ul.sidenav li a {
+        text-align: center;
+        float: none;
+    }
+}
+</style>
+
+
+<div class="container">
+<nav class="navbar navbar-dark bg-dark">
+  <a class="navbar-brand" href="#"></a>
+
+	<ul class="nav nav-pills" id="pills">
+	<li class="active"><a href="#">Home</a></li>
+	<li><a href="#collapseOne">Web Developer</a></li>
+	<li><a href="#collapseTwo">Financial Planning Help</a></li>
+	<li><a href="#collapseThree">Organizer/Event Planner</a></li>
+	<li><a href="#collapseFour">Postpartum Assist</a></li>
+	<li><a href="#collapseFive">Writer</a></li>
+	</ul>
+</nav>
+</div>
 
 </head>
 
-<body bgcolor="brick">
+<body>
 
-<h1>Shenikia's Web Page</h1>
+<h1>Shenikias Web Page</h1>
 
 <div class="intro">
-	<h2>Finding Myself</h2>
+	<h4>Finding Myself</h4>
   <div class="myself">
-    <img src="pics/Shen in Red and Black.jpg" width="200" alt="Shenikia"
+    <img src="pics/Shen in Red and Black.jpg" width="250" alt="Shenikia"
 				 			border="5rem solid">
       </div>
-    <div class="about me">
-			
-      2 of 2
+
+    <div class="about">
+			<p>About Me: This is a new chapter in my journey.  Life has most definitely
+				taken unexpected turns and left me angry and voiceless at times.  But, I
+				am still here and that means there is work to do. While variety is my current
+				way of functioning, order is at my core. Succeeding is not an option it's a must.
+        Let me show you why...
+
+				<!---Rotating pics of my children--->
+	<div class="container">
+  <h3>My Reasons Why</h3>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+		</ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+				<img src="pics/Liyah.jpg" alt="Ahzaliyah" style="max-width:75%; height:400px;">
+				<p>Gifted to me during a time in my life when I needed a reason to live</p>
+      </div>
+
+      <div class="item">
+        <img src="pics/John.jpg" alt="John" style="max-width:75%; height:400px;">
+				<p>My favorite little man was an unexpected turn of events</p>
+      </div>
+
+      <div class="item">
+        <img src="pics/Adira.jpg" alt="Adira" style="max-width:75%; height:400px;">
+				<p>Finding out about this beauty was One of those blank stare moments</p>
+      </div>
     </div>
-  </div>
-  <div class="row">
-    <div class="col">
-      1 of 3
-    </div>
-    <div class="col">
-      2 of 3
-    </div>
-    <div class="col">
-      3 of 3
-    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
   </div>
 </div>
 
+<h6>figure out how to place padding between the carousel and the collasing cards</h6>
+<!---use this as an alert
+			<p>I hope as you peruse my page, there will be something that catches your attention
+				and causes you to want to utilize my services or extend a hand.
+			 </p>
+    </div>
+  </div> --->
 
- <p>About Me: This is a new chapter in my journey.  Life has most definitely
-	 taken unexpected turns and left me angry and voiceless at times.  But, I
-   am still here and that means there is work to do. While variety is my current
-	 way of functioning, order is at my core. I hope as you peruse my page, there
-	 will be something that catches your attention and causes you to want to utilize
-	 my services or extend a hand.
-	</p>
+<!--trying to give page life with collapsing cards from BootstrapDocs--->
+	<div class="panel-group" id="accordion">
+	  <div class="panel panel-default">
+	    <div class="panel-heading">
+	      <h4 class="panel-title">
+	        <a data-toggle="collapse" data-parent="#accordion" href="default.js">
+	          Web Developer - New Endeavor
+	        </a>
+	      </h4>
+	    </div>
+	    <div id="collapseOne" class="panel-collapse collapse in">
+	      <div class="panel-body">
+					Web development was never something I envisioned myself doing.  Being
+					introduced to this field and learning these skills has been amazing. this
+					page is the first of many more projects to come.  I look forward to expanding
+					my knowledge and skills in this arena.  I would appreciate the opportunity
+					to have your page be a part of my portfolio.
+	      </div>
+	    </div>
+	  </div>
+	  <div class="panel panel-default">
+	    <div class="panel-heading">
+	      <h4 class="panel-title">
+	        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+	          Financial Planning Help
+	        </a>
+	      </h4>
+	    </div>
+	    <div id="collapseTwo" class="panel-collapse collapse">
+	      <div class="panel-body">
+					The words financial planning often make people look the other way because its deemed as
+						boring or for someone who has a lot of money to plan with. So the average person, me, would
+						think financial planinng irrelevant. But the truth is, financial planning impacts all
+						of us in our present, future, and the futures of our family
+	      </div>
+	    </div>
+	  </div>
+	  <div class="panel panel-default">
+	    <div class="panel-heading">
+	      <h4 class="panel-title">
+	        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+	         Organizer/Event Planner
+	        </a>
+	      </h4>
+	    </div>
+	    <div id="collapseThree" class="panel-collapse collapse">
+	      <div class="panel-body">
+					Getting things in order can be a very overwhelming task. Our lives are always on the go
+ 				  so finding time to plan those fun, or relaxing, and/or life-changing times
+ 				  can take a backseat until the last possible moment and then we are throwing something together
+ 				  and hoping for the best. I love the possibilities in planning. Allow me to take the stress
+ 				  of the details so that you and yours can just enjoy.
+	      </div>
+	    </div>
+	  </div>
+		<div class="panel panel-default">
+	    <div class="panel-heading">
+	      <h4 class="panel-title">
+	        <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+	          Postpartum Assist
+	        </a>
+	      </h4>
+	    </div>
+	    <div id="collapseFour" class="panel-collapse collapse">
+	      <div class="panel-body">
+					There is a need for women helping other women, regardless of race, belief, economic
+					status, or any other subjective prejudice. Women are strong.  But we are stronger
+					together. People can experience some major life changes and a huge one is pregnancy
+					and what follows.
+	      </div>
+	    </div>
+	  </div>
+		<div class="panel panel-default">
+	    <div class="panel-heading">
+	      <h4 class="panel-title">
+	        <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
+	          Writer (1st book to come this fall of 2018)
+	        </a>
+	      </h4>
+	    </div>
+	    <div id="collapseFive" class="panel-collapse collapse">
+	      <div class="panel-body">
+					Winter - A Voice In Season
+	      </div>
+	    </div>
+	  </div>
+	</div>
 
-<p>There is a need for women helping other women, regardless of race, belief, economic
-	status, or any other subjective prejudice.  Women are strong.  But we are stronger
-	together.  People can experience some major life changes and a huge one is pregnancy
-	and what follows.
 
-</p>
 
-<div id="shadowbox">
-		 <p>I wonder what the Bahamas feels like...</p>
-</div>
 
+<!---this code is for adding forms that allow me to collect the info inserted and due
+to that action needing php, a backend utility, I will leave this as a note
 <form action="default.htm" method="post">
-			<h1>Sign Up</h1>
+			<h1>Sign Up</h1> --->
 
-<!--- Will be used for Post Partum Assist & Financial Planning Help--->
+<!--- Will be used for Post Partum Assist & Financial Planning Help
 			<fieldset>
 			<legend><span class="number">1</span>Your Basic Info</legend>
 
@@ -88,9 +254,9 @@
 			<legend><span class="number">2</span>Your Profile</legend>
   			<label for="about">all about you:</label>
   			<textarea id="about" name="user_about"></textarea>
+--->
 
-
-				<!--- Will be used for Organizing Events --->
+				<!--- Will be used for Organizing Events
 
 				<label for="event">organized events:</label>
 				<select id="event" name="user_event">
@@ -119,24 +285,22 @@
 </form>
 
 
-<!--- Will be used for Post Partum Assist & Financial Planning Help--->
+ Will be used for Post Partum Assist & Financial Planning Help--->
 
-<div>
-<img src="/shen/images/my pic.jpg" width="200" alt="my pic"
-		 border="7rem solid">
-		 <p>delete this pic</p>
-</div>
 
-<div>
-<img src="pics/John and Adira.jpg" width="550" alt="John and Adira"
-		 border="9rem solid">
-		 <p>Add a pic of all 3 children (My reasons why)</p>
-</div>
 
 
 
 
 
 </body>
+
+
+
+<footer>
+  <p>Posted by: Shenikia Thomas</p>
+  <p>Contact information:<a href="mailto:shenikiar@gmail.com"></p>
+
+</footer>
 
 </html>

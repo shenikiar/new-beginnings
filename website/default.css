@@ -1,7 +1,52 @@
+ /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  body {
+    background-color: white;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  body {
+    background-color: pink;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  body {
+    background: linear-gradient(red, pink, blue);
+    }
+}
+
+@media(min-width: 769px){
+  inln{width:auto;
+  display: inline-block;}
+}
+
+
+.container {
+  width: 1300px;
+  margin: 0 auto;
+  margin-top:25px;
+  font-size-adjust: auto;
+  background-color: black;
+}
+
 
 body {
-  width: 500px;
+  width: 1300px;
   margin: 0 auto;
+}
+#grad {
+  background: linear-gradient(red, yellow, green);
 }
 
 h1 {
@@ -9,7 +54,7 @@ h1 {
 }
 
 p {color:
-white;
+Black;
 }
 
 figcaption {
@@ -30,5 +75,27 @@ figcaption {
 }
 
 .body bgcolor{
-	linear-gradient(180deg, 40%);
+	linear-gradient(90deg, 40%);
+}
+
+.Liyah {
+  transform: rotate(180deg);
+}
+
+h6 {color:
+   Red;
+}
+
+/* Change the link color on hover */
+li a:hover {
+    background-color: #555;
+    color: red;
+}
+
+about {
+    position: absolute;
+    right: 0px;
+    width: 300px;
+    border: 3px solid #73AD21;
+    padding: 10px;
 }
