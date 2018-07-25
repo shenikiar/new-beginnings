@@ -26,17 +26,6 @@
     }
 }
 
-@media(min-width: 769px){
-  inln{width:auto;
-  display: inline-block;}
-}
-
-<style>
-div.content {
-    margin-left: 25%;
-    padding: 1px 16px;
-    height: 1000px;
-}
 
 @media screen and (max-width: 900px) {
     ul.sidenav {
@@ -56,8 +45,13 @@ div.content {
         text-align: center;
         float: none;
     }
+      div.content {
+        margin-left: 25%;
+        padding: 1px 16px;
+        height: 1000px;
+    }
 }
-</style>
+
 
 
 .container {
@@ -70,15 +64,21 @@ div.content {
 
 
 body {
-  width: 1300px;
+  width: 1000px;
   margin: 0 auto;
 }
 #grad {
   background: linear-gradient(red, yellow, green);
 }
 
-h1 {
+h1  {
+  text-align: center;
+  text-decoration: underline;
+}
 
+h4, .intro, h3, .children,
+.myCarousel {
+  text-align: center;
 }
 
 p {color:
@@ -86,7 +86,7 @@ Black;
 }
 
 figcaption {
-  font-size: .10em;
+  font-size: 1em;
   line-height: 1.5;
   color: #fff;
   padding: 1em;
@@ -107,13 +107,27 @@ figcaption {
 }
 
 .Liyah {
-  transform: rotate(270deg);
-}
+  transform: rotate(360deg);
+  display: inline;
+  }
 .John {
   transform: rotate(90deg);
+  display: inline-block;
 }
 .Adira {
   transform: rotate(90deg);
+  display: inline-block;
+}
+
+.Liyah span{
+  display: block;
+}
+
+.John span{
+  display: block;
+}
+.Adira span{
+  display: block;
 }
 
 h6 {color:
@@ -127,8 +141,8 @@ li a:hover {
 }
 
 about {
-    position: absolute;
-    right: 50px;
+    position: right;
+    right: 500px;
     width: 300px;
     border: 3px solid #73AD21;
     padding: 10px;
