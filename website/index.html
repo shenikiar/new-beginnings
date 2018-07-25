@@ -1,17 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script type="text/javascript" src="default.js"></script>
 <link rel="stylesheet" type="text/css" href="default.css">
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
- <script src="jquery-3.2.1.min.js"></script>
-
- <link rel="stylesheet" type="text/css" href="default.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="default.css">
 
 <title>Shenikia's Area</title>
 <!---a welcome to my page --->
@@ -32,6 +27,11 @@
 	</ul>
 </nav>
 </div>
+
+<script src="jquery-3.2.1.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="default.js"></script>
 
 </head>
 
@@ -67,18 +67,18 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
       <div class="item active">
-				<img src="pics/Liyah.jpg" class="Liyah" alt="Ahzaliyah chillin" style="max-width:75%; height:300px;">
-				<span>Gifted to me during a time in my life when I needed a reason to live</span>
+				<img src="pics/Liyah.jpg" class="Liyah" alt="Ahzaliyah chillin" style="max-width:95%; height:700px;">
+				<footer>Gifted to me during a time in my life when I needed a reason to live</footer>
       </div>
 
       <div class="item">
-        <img src="pics/John.jpg" class="John" alt="John in a half suit" style="max-width:60%; height:300px;">
-				<span>My favorite little man was an unexpected turn of events</span>
+        <img src="pics/John.jpg" class="John" alt="John in a half suit" style="max-width:60%; height:700px;">
+				<footer>My favorite little man was an unexpected turn of events</footer>
       </div>
 
       <div class="item">
-        <img src="pics/Adira.jpg" class="Adira" alt="Adira smiling" style="max-width:60%; height:300px;">
-				<span>Finding out about this beauty was One of those blank stare moments</span>
+        <img src="pics/Adira.jpg" class="Adira" alt="Adira smiling" style="max-width:60%; height:700px;">
+				<footer>Finding out about this beauty was One of those blank stare moments</footer>
       </div>
     </div>
 
@@ -129,7 +129,7 @@
 	        </a>
 	      </h4>
 	    </div>
-	    <div id="collapseTwo" class="panel-collapse collapse">
+	    <div id="collapseTwo" class="panel-collapse collapse in">
 	      <div class="panel-body">
 					The words financial planning often make people look the other way because its deemed as
 						boring or for someone who has a lot of money to plan with. So the average person, me, would
@@ -142,11 +142,11 @@
 	    <div class="panel-heading">
 	      <h4 class="panel-title">
 	        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
-	         Organizer-Event Planner
+	         Organizer and Event Planner
 	        </a>
 	      </h4>
 	    </div>
-	    <div id="collapseThree" class="panel-collapse collapse">
+	    <div id="collapseThree" class="panel-collapse collapse in">
 	      <div class="panel-body">
 					Getting things in order can be a very overwhelming task. Our lives are always on the go
  				  so finding time to plan those fun, or relaxing, and/or life-changing times
@@ -164,7 +164,7 @@
 	        </a>
 	      </h4>
 	    </div>
-	    <div id="collapseFour" class="panel-collapse collapse">
+	    <div id="collapseFour" class="panel-collapse collapse in">
 	      <div class="panel-body">
 					There is a need for women helping other women, regardless of race, belief, economic
 					status, or any other subjective prejudice. Women are strong.  But we are stronger
@@ -181,7 +181,7 @@
 	        </a>
 	      </h4>
 	    </div>
-	    <div id="collapseFive" class="panel-collapse collapse">
+	    <div id="collapseFive" class="panel-collapse collapse in">
 	      <div class="panel-body">
 					Winter - A Voice In Season
 	      </div>
@@ -197,7 +197,11 @@ to that action needing php, a backend utility, I will leave this as a note
 <form action="default.htm" method="post">
 			<h1>Sign Up</h1> --->
 
-<!--- Will be used for Post Partum Assist & Financial Planning Help
+<!--- Will be used for Post Partum Assist & Financial Planning Help but adjusted
+for code louisville project <form class="" action="index.html" method="post">
+</form>--->
+
+	<form action="index.html" method="post">
 			<fieldset>
 			<legend><span class="number">1</span>Your Basic Info</legend>
 
@@ -208,7 +212,7 @@ to that action needing php, a backend utility, I will leave this as a note
   			<input type="email" id="mail" name="user_email"><br>
 
   			<label for="tel">telephone:</label>
-  			<input type="telephone" id="tel" name="user_telephone">
+  			<input type="telephone" id="tel" name="user_telephone"> <br>
 
 				<label>Interest(s):</label>
 	      <input type="checkbox" id="party" value="party" name="user_party">
@@ -219,13 +223,13 @@ to that action needing php, a backend utility, I will leave this as a note
 
 	      <input type="checkbox" id="outing" value="outing" name="user_outing">
 	      <label class="light" for="outing">Outing</label><br>
-			</fieldset>
 
-			<fieldset>
-			<legend><span class="number">2</span>Your Profile</legend>
   			<label for="about">all about you:</label>
   			<textarea id="about" name="user_about"></textarea>
---->
+			</fieldset>
+
+			<button type="submit">Sign Up</button>
+	</form>
 
 				<!--- Will be used for Organizing Events
 
@@ -265,8 +269,6 @@ to that action needing php, a backend utility, I will leave this as a note
 
 
 </body>
-
-
 
 <footer>
 	<address>
