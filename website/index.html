@@ -10,7 +10,9 @@
 
 <title>Shenikia's Area</title>
 <!---a welcome to my page --->
-
+<div hidden>
+        <div id="wrapper"><h1>Hey, Welcome to my page!!!</h1></div>
+    </div>
 <!---navigation bar --->
 
 <div class="container">
@@ -72,12 +74,12 @@
       </div>
 
       <div class="item">
-        <img src="pics/John.jpg" class="John" alt="John in a half suit" style="max-width:60%; height:700px;">
+        <img src="pics/John.jpg" class="John" alt="John in a half suit" style="max-width:60%; height:650px;">
 				<footer>My favorite little man was an unexpected turn of events</footer>
       </div>
 
       <div class="item">
-        <img src="pics/Adira.jpg" class="Adira" alt="Adira smiling" style="max-width:60%; height:700px;">
+        <img src="pics/Adira.jpg" class="Adira" alt="Adira smiling" style="max-width:60%; height:600px;">
 				<footer>Finding out about this beauty was One of those blank stare moments</footer>
       </div>
     </div>
@@ -215,20 +217,24 @@ for code louisville project <form class="" action="index.html" method="post">
   			<input type="telephone" id="tel" name="user_telephone"> <br>
 
 				<label>Interest(s):</label>
-	      <input type="checkbox" id="party" value="party" name="user_party">
-	      <label class="light" for="party">Party</label><br>
+	      <input type="checkbox" id="developer" value="developer" name="user_developer">
+	      <label class="light" for="developer">Web Developer</label><br>
 
-	      <input type="checkbox" id="gathering" value="gathering" name="user_gathering">
-	      <label class="light" for="gathering">Gathering</label><br>
+	      <input type="checkbox" id="financial" value="financial" name="user_financial">
+	      <label class="light" for="financial">Financial Planning Help</label><br>
 
-	      <input type="checkbox" id="outing" value="outing" name="user_outing">
-	      <label class="light" for="outing">Outing</label><br>
+	      <input type="checkbox" id="planner" value="planner" name="user_planner">
+	      <label class="light" for="planner">Organizer and Event Planner</label><br>
+
+				<input type="checkbox" id="assist" value="assist" name="user_assist">
+			  <label class="light" for="assist">Postpartum Assist</label><br>
 
   			<label for="about">all about you:</label>
   			<textarea id="about" name="user_about"></textarea>
 			</fieldset>
 
-			<button type="submit">Sign Up</button>
+<p id="reg">Click the button below to complete registration</p>
+			<button onClick="myFunction">Sign Up</button>
 	</form>
 
 				<!--- Will be used for Organizing Events
