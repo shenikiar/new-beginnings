@@ -1,14 +1,20 @@
  /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   body {
-    background-color: lightblue;
+    background-color: white;
+    width: 100%;
+    height: auto;
+    position: relative;
     }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   body {
-    background-color: white;
+    background-color: tan;
+    width: 100%;
+          height: auto;
+          position: relative;
     }
 }
 
@@ -16,6 +22,9 @@
 @media only screen and (min-width: 768px) {
   body {
     background-color: pink;
+    width: 100%;
+          height: auto;
+          position: relative;
     }
 }
 
@@ -23,22 +32,17 @@
 @media only screen and (min-width: 992px) {
   body {
     background: linear-gradient(red, pink, blue);
+    width: 100%;
+          height: auto;
+          position: relative;
     }
 }
-
 
 @media screen and (max-width: 900px) {
-    ul.sidenav {
-        width: 100%;
+  body{     width: 100%;
         height: auto;
-        position: relative;
+        position: relative;}
     }
-    ul.sidenav li a {
-        float: left;
-        padding: 15px;
-    }
-    div.content {margin-left: 0;}
-}
 
 @media screen and (max-width: 400px) {
     ul.sidenav li a {
@@ -52,21 +56,19 @@
     }
 }
 
-
-
 .container {
-  width: 1100px;
+/*  width: 1100px; */
   margin: 0 auto;
   margin-top:50px;
   font-size-adjust: auto;
   background-color: black;
 }
 
-
 body {
-  width: 1000px;
+/*  width: 1000px;*/
   margin: 0 auto;
 }
+
 #grad {
   background: linear-gradient(red, yellow, green);
 }
