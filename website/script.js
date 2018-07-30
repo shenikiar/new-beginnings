@@ -1,13 +1,31 @@
-$("div:hidden:first").fadeIn(1000).delay(4000).slideUp(1000);
+
+// Hide Welcome text
+$('.spoiler span').hide();
+//When the button is pressed
+$('.spoiler button').click(function(){
+  //Show the Welcome text
+$('.spoiler span').show();
+  //Hide the "Welcome" Button
+  $('.spoiler button').fadeOut();
+});
 
 
 <script>
+//When the user clicks on <div>, open the popuptext
 function myFunction() {
-    document.getElementById("reg1").innerHTML=
-    "Thank you for signing up!";
-    document.getElementById("reg2").innerHTML=
-    "I look forward to speaking with you soon";
-    }
+  var popup = document.getElementById("myPopup");
+
+popup.classList.toggle("show");
+}
 </script>
 
-<button onclick="myFunction('click')">Sign Up!</button>
+// Hide Thanks text
+$('.popup span').hide();
+//When the button is pressed
+$('.popup button').click(function(){
+  //Show the Thanks text
+$('.popup span').show();
+  //Hide the "Thanks" Button
+$('.popup button').hide();
+
+});

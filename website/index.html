@@ -10,9 +10,11 @@
 
 <title>Shenikia's Area</title>
 <!---a welcome to my page --->
-<div hidden>
-        <div id="wrapper"><h1>Hey, Welcome to my page!!!</h1></div>
-    </div>
+<p class="spoiler">
+    <span> "Welcome to my page. I am so glad you stopped by!"
+    </span><br>
+      <button>Start Here First</button>
+      </p>
 <!---navigation bar --->
 
 <div class="container">
@@ -33,16 +35,14 @@
 </head>
 
 <body>
-
 <h1>Shenikias Web Page</h1>
 
 <div class="intro">
 	<h4>Finding Myself</h4>
   <div class="myself">
-    <img src="pics/Shen in Red and Black.jpg" width="250" alt="Shenikia"
+    <img src="pics/Shen in Red and Black.jpg" width="250" alt="Shenikia" title= "A picture of Myself dressed in red and black"
 				 			border="5rem solid">
       </div>
-
     <div class="about">
 			<p>About Me: This is a new chapter in my journey.  Life has most definitely
 				taken unexpected turns and left me angry and voiceless at times.  But, I
@@ -64,17 +64,17 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
       <div class="item active">
-				<img src="pics/Liyah.jpg" class="Liyah" alt="Ahzaliyah chillin" style="max-width:95%; height:700px;">
+				<img src="pics/Liyah.jpg" class="Liyah" alt="Ahzaliyah chillin" title= "My Daughter" style="max-width:95%; height:700px;">
 				<footer>Gifted to me during a time in my life when I needed a reason to live</footer>
       </div>
 
       <div class="item">
-        <img src="pics/John.jpg" class="John" alt="John in a half suit" style="max-width:60%; height:650px;">
+        <img src="pics/John.jpg" class="John" alt="John in a half suit" title= "My Son" style="max-width:95%; height:700px;">
 				<footer>My favorite little man was an unexpected turn of events</footer>
       </div>
 
       <div class="item">
-        <img src="pics/Adira.jpg" class="Adira" alt="Adira smiling" style="max-width:60%; height:600px;">
+        <img src="pics/Adira.jpg" class="Adira" alt="Adira smiling" title= "My Daugther" style="max-width:95%; height:700px;">
 				<footer>Finding out about this beauty was One of those blank stare moments</footer>
       </div>
     </div>
@@ -228,9 +228,18 @@ for code louisville project <form class="" action="index.html" method="post">
   			<textarea id="about" name="user_about"></textarea>
 			</fieldset>
 
-<p id="reg">Click the button below to complete registration</p>
-			<button onclick="myFunction()">Sign Up</button>
-	</form>
+      Click the button below to complete registration<br>
+
+<div class="popup" onclick="myFunction()">
+  <span class="popuptext" id="myPopup">
+    "Thank you for signing up!","I look forward to speaking with you soon"
+        </span>
+			<button>Sign Up</button>
+</div>
+
+
+
+</form>
 
 				<!--- Will be used for Organizing Events
 
