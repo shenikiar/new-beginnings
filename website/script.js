@@ -10,6 +10,7 @@ $('.spoiler span').show();
 });
 
 
+<<<<<<< HEAD
 <script>
 //When the user clicks on <div>, open the popuptext
 function myFunction() {
@@ -29,3 +30,14 @@ $('.popup span').show();
 $('.popup button').hide();
 
 });
+=======
+
+function myFunction() {
+    document.getElementById("p").innerHTML=
+    "Thank you for signing up!";
+    document.getElementById("p").innerHTML=
+    "I look forward to speaking with you soon";
+    }
+
+
+>>>>>>> 7b1bc0352e73d280219dc416475b5f8170ad7b90
